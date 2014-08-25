@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jack Phoenix <jack@countervandalism.net>\r"
+		]
+	},
+	"truglass-links": "{{GRAMMAR:genitive|{{SITENAME}}}} linkit",
+	"truglass-welcome": "Tervetuloa {{GRAMMAR:illative|{{SITENAME}}}}! Lisää tietoa painamalla muokkaa-painiketta yläpuolella!"
+}
