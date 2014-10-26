@@ -19,14 +19,29 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * Inherit main code from SkinTemplate, set the CSS and template filter.
  */
 class SkinTruglass extends SkinTemplate {
-	var $skinname = 'truglass', $stylename = 'truglass',
+	public $skinname = 'truglass', $stylename = 'truglass',
 		$template = 'TruglassTemplate', $useHeadElement = true;
+	/**
+	 * @var Config
+	 */
+	private $truglassConfig;
+
+	public function __construct() {
+		$this->truglassConfig = ConfigFactory::getDefaultInstance()->makeConfig( 'truglass' );
+	}
 
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 
 		// Add CSS
 		$out->addModuleStyles( 'skins.truglass' );
+	}
+
+	/**
+	 * Override to pass our Config instance to it
+	 */
+	public function setupTemplate( $classname, $repository = false, $cache_dir = false ) {
+		return new $classname( $this->truglassConfig );
 	}
 }
 
@@ -340,9 +355,9 @@ class TruglassTemplate extends BaseTemplate {
 	 * an array.
 	 */
 	function networkNavigationBox() {
-		global $wgTruglassSidebarLinks;
+		$sidebarLinks = $this->config->get( 'TruglassSidebarLinks' );
 
-		if( is_array( $wgTruglassSidebarLinks ) && !empty( $wgTruglassSidebarLinks ) ) {
+		if( is_array( $sidebarLinks ) && !empty( $sidebarLinks ) ) {
 ?>
 					<div class="sbmodule" id="sbm-networknav">
 						<h4 class="sbmoduletitle displayer"><?php echo wfMessage( 'truglass-links' )->parse() ?></h4>
@@ -350,7 +365,7 @@ class TruglassTemplate extends BaseTemplate {
 							<div class="stretcher">
 								<ul>
 									<?php
-									foreach ( $wgTruglassSidebarLinks as $link => $title ) {
+									foreach ( $sidebarLinks as $link => $title ) {
 										echo '<li><a href="http://' . $link . '/">' . $title . '</a></li>';
 									}
 									?>

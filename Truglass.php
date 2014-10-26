@@ -39,6 +39,7 @@ $wgValidSkinNames['truglass'] = 'Truglass';
 // Autoload the skin class, make it a valid skin, set up i18n, set up CSS
 // (via ResourceLoader)
 $wgAutoloadClasses['SkinTruglass'] = __DIR__ . '/Truglass.skin.php';
+$wgConfigRegistry['truglass'] = 'GlobalVarConfig::newInstance';
 $wgMessagesDirs['SkinTruglass'] = __DIR__ . '/i18n';
 $wgResourceModules['skins.truglass'] = array(
 	'styles' => array(
