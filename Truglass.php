@@ -9,7 +9,7 @@
  * @copyright Copyright © Elliott Franklin Cable
  * @copyright Copyright © 2009-2014 Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
- * @date 27 July 2014
+ * @date 4 December 2014
  *
  * To install place the Truglass folder (the folder containing this file!) into
  * skins/ and add this line to your wiki's LocalSettings.php:
@@ -24,7 +24,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['skin'][] = array(
 	'path' => __FILE__,
 	'name' => 'Truglass',
-	'version' => '3.1',
+	'version' => '3.1.1',
 	'author' => array( 'Elliott Franklin Cable', 'Jack Phoenix' ),
 	'description' => 'A sleek, stylish, simplified skin',
 	'url' => 'https://www.mediawiki.org/wiki/Skin:Truglass',
