@@ -16,37 +16,15 @@
  * require_once("$IP/skins/Truglass/Truglass.php");
  */
 
-if( !defined( 'MEDIAWIKI' ) ) {
-	die( 'Not a valid entry point.' );
+if ( function_exists( 'wfLoadSkin' ) ) {
+	wfLoadSkin( 'Truglass' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['Truglass'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for Truglass skin. Please use wfLoadSkin instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the Truglass skin requires MediaWiki 1.25+' );
 }
-
-// Skin credits that will show up on Special:Version
-$wgExtensionCredits['skin'][] = array(
-	'path' => __FILE__,
-	'name' => 'Truglass',
-	'version' => '3.1.1',
-	'author' => array( 'Elliott Franklin Cable', 'Jack Phoenix' ),
-	'description' => 'A sleek, stylish, simplified skin',
-	'url' => 'https://www.mediawiki.org/wiki/Skin:Truglass',
-);
-
-// The first instance must be strtolower()ed so that useskin=truglass works and
-// so that it does *not* force an initial capital (i.e. we do NOT want
-// useskin=Truglass) and the second instance is used to determine the name of
-// *this* file.
-$wgValidSkinNames['truglass'] = 'Truglass';
-
-// Autoload the skin class, make it a valid skin, set up i18n, set up CSS
-// (via ResourceLoader)
-$wgAutoloadClasses['SkinTruglass'] = __DIR__ . '/Truglass.skin.php';
-$wgConfigRegistry['truglass'] = 'GlobalVarConfig::newInstance';
-$wgMessagesDirs['SkinTruglass'] = __DIR__ . '/i18n';
-$wgResourceModules['skins.truglass'] = array(
-	'styles' => array(
-		'skins/Truglass/truglass/main.css' => array( 'media' => 'screen' ),
-		'skins/Truglass/truglass/handheld.css' => array( 'media' => 'handheld' ),
-	),
-	'position' => 'top'
-);
-
-$wgTruglassSidebarLinks = array();

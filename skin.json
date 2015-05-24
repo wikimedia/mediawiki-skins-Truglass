@@ -1,0 +1,41 @@
+{
+	"name": "Truglass",
+	"version": "3.1.2",
+	"author": [
+		"Elliott Franklin Cable",
+		"Jack Phoenix"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Truglass",
+	"description": "A sleek, stylish, simplified skin",
+	"type": "skin",
+	"ConfigRegistry": {
+		"truglass": "GlobalVarConfig::newInstance"
+	},
+	"ValidSkinNames": {
+		"truglass": "Truglass"
+	},
+	"MessagesDirs": {
+		"SkinTruglass": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SkinTruglass": "Truglass.skin.php"
+	},
+	"ResourceModules": {
+		"skins.truglass": {
+			"styles": {
+				"skins/Truglass/truglass/main.css": {
+					"media": "screen"
+				},
+				"skins/Truglass/truglass/handheld.css": {
+					"media": "handheld"
+				}
+			},
+			"position": "top"
+		}
+	},
+	"config": {
+		"TruglassSidebarLinks": []
+	}
+}
