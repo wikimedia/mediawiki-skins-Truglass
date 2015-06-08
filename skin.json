@@ -37,5 +37,6 @@
 	},
 	"config": {
 		"TruglassSidebarLinks": []
-	}
+	},
+	"manifest_version": 1
 }
