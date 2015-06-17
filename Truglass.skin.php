@@ -99,7 +99,7 @@ class TruglassTemplate extends BaseTemplate {
 					</tbody>
 				</table>
 				<div id="content">
-					<?php /* Hook point for ShoutWiki Ads extension */ wfRunHooks( 'TruglassInContent' ); ?>
+					<?php /* Hook point for ShoutWiki Ads extension */ Hooks::run( 'TruglassInContent' ); ?>
 					<table class="fullwidth" id="bC">
 						<tr>
 							<td id="realcontent">
@@ -319,7 +319,7 @@ class TruglassTemplate extends BaseTemplate {
 			echo $this->makeListItem( $key, $tbitem );
 		}
 
-		wfRunHooks( 'SkinTemplateToolboxEnd', array( &$this, true ) );
+		Hooks::run( 'SkinTemplateToolboxEnd', array( &$this, true ) );
 ?>
 						</ul>
 					</div>
