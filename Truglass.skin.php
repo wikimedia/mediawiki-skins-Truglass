@@ -5,18 +5,13 @@
  * Source: http://meta.enterwiki.net/page/MediaWiki:CODE/skins/Truglass.php
  *
  * @file
- * @ingroup Skins
  * @author Elliott Franklin Cable <me@ell.io>
  * @author Jack Phoenix <jack@countervandalism.net>
- * @todo document
  */
-
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( -1 );
-}
 
 /**
  * Inherit main code from SkinTemplate, set the CSS and template filter.
+ * @ingroup Skins
  */
 class SkinTruglass extends SkinTemplate {
 	public $skinname = 'truglass', $stylename = 'truglass',
@@ -293,8 +288,8 @@ class TruglassTemplate extends BaseTemplate {
 	function cactions() {
 ?>
 						<div id="cactions" class="noprint">
-							<?php foreach( $this->data['content_actions'] as $key => $tab ) { ?>
-								<?php if( preg_match( "/^(nstab-main|nstab-user|nstab-project|nstab-image|nstab-mediawiki|nstab-template|nstab-help|nstab-category)$/", $key ) ) { ?>
+							<?php foreach ( $this->data['content_actions'] as $key => $tab ) { ?>
+								<?php if ( preg_match( "/^(nstab-main|nstab-user|nstab-project|nstab-image|nstab-mediawiki|nstab-template|nstab-help|nstab-category)$/", $key ) ) { ?>
 									<div id="contentpages"><span id="ca-<?php echo htmlspecialchars( $key ) ?>">[ <a href="<?php echo htmlspecialchars( $tab['href'] ) ?>"<?php if( $tab['class'] ) { ?> class="<?php echo htmlspecialchars( $tab['class'] ) ?>"<?php } ?>><?php echo htmlspecialchars( $tab['text'] ) ?></a></span>
 								<?php } elseif( preg_match( "/^(talk)$/", $key ) ) { ?>
 									<span id="ca-<?php echo htmlspecialchars( $key ) ?>"><a href="<?php echo htmlspecialchars( $tab['href'] ) ?>"<?php if( $tab['class'] ) { ?> class="<?php echo htmlspecialchars( $tab['class'] ) ?>"<?php } ?>><?php echo htmlspecialchars( $tab['text'] ) ?></a> ]</span></div>
@@ -330,7 +325,7 @@ class TruglassTemplate extends BaseTemplate {
 
 	/*************************************************************************************************/
 	function languageBox() {
-		if( $this->data['language_urls'] ) {
+		if ( $this->data['language_urls'] ) {
 ?>
 					<div class="sbmodule" id="sbm-lang">
 						<h4 class="sbmoduletitle displayer"<?php $this->html( 'userlangattributes' ) ?>><?php $this->msg( 'otherlanguages' ) ?></h4>
@@ -357,7 +352,7 @@ class TruglassTemplate extends BaseTemplate {
 	function networkNavigationBox() {
 		$sidebarLinks = $this->config->get( 'TruglassSidebarLinks' );
 
-		if( is_array( $sidebarLinks ) && !empty( $sidebarLinks ) ) {
+		if ( is_array( $sidebarLinks ) && !empty( $sidebarLinks ) ) {
 ?>
 					<div class="sbmodule" id="sbm-networknav">
 						<h4 class="sbmoduletitle displayer"><?php echo wfMessage( 'truglass-links' )->parse() ?></h4>
@@ -382,7 +377,10 @@ class TruglassTemplate extends BaseTemplate {
 	 * @param $cont array|string
 	 */
 	function customBox( $bar, $cont ) {
-		$portletAttribs = array( 'class' => 'sbmodule', 'id' => Sanitizer::escapeId( "sbm-$bar" ) );
+		$portletAttribs = array(
+			'class' => 'sbmodule',
+			'id' => Sanitizer::escapeId( "sbm-$bar" )
+		);
 		$tooltip = Linker::titleAttrib( "p-$bar" );
 		if ( $tooltip !== false ) {
 			$portletAttribs['title'] = $tooltip;
@@ -395,13 +393,12 @@ class TruglassTemplate extends BaseTemplate {
 			<div class="stretcher">
 <?php	if ( is_array( $cont ) ) { ?>
 			<ul>
-<?php		foreach( $cont as $key => $val ) {
-					// prefix the IDs with smb-
-					$val['id'] = 'smb-' . $val['id'];
+<?php		foreach ( $cont as $key => $val ) {
+				// prefix the IDs with smb-
+				$val['id'] = 'smb-' . $val['id'];
+				echo $this->makeListItem( $key, $val );
+			}
 ?>
-				<?php echo $this->makeListItem( $key, $val ); ?>
-
-<?php		} ?>
 			</ul>
 <?php	} else {
 			# allow raw HTML block to be defined by extensions

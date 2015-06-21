@@ -7,6 +7,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Truglass",
 	"description": "A sleek, stylish, simplified skin",
+	"license-name": "GPL-2.0+",
 	"type": "skin",
 	"ConfigRegistry": {
 		"truglass": "GlobalVarConfig::newInstance"
@@ -20,7 +21,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinTruglass": "Truglass.skin.php"
+		"SkinTruglass": "Truglass.skin.php",
+		"TruglassTemplate": "Truglass.skin.php"
 	},
 	"ResourceModules": {
 		"skins.truglass": {
