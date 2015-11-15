@@ -24,13 +24,17 @@
 		"SkinTruglass": "Truglass.skin.php",
 		"TruglassTemplate": "Truglass.skin.php"
 	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Truglass"
+	},
 	"ResourceModules": {
 		"skins.truglass": {
 			"styles": {
-				"skins/Truglass/truglass/main.css": {
+				"truglass/main.css": {
 					"media": "screen"
 				},
-				"skins/Truglass/truglass/handheld.css": {
+				"truglass/handheld.css": {
 					"media": "handheld"
 				}
 			},
