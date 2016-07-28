@@ -7,6 +7,9 @@
  * @file
  * @author Elliott Franklin Cable <me@ell.io>
  * @author Jack Phoenix <jack@countervandalism.net>
+ * @copyright Copyright © Elliott Franklin Cable
+ * @copyright Copyright © 2009-2016 Jack Phoenix
+ * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
 /**
@@ -189,7 +192,6 @@ class TruglassTemplate extends BaseTemplate {
 	if ( $hasFooterLinks || !$footerMessage->isBlank() || isset( $this->data['copyright'] ) && $this->data['copyright'] ):
 ?>
 <div id="footer" class="noprint">
-	<!-- <?php if ( $this->data['copyrightico'] ) { ?><div id="f-copyrightico"><?php $this->html( 'copyrightico' ) ?></div><?php } ?> -->
 	<div id="pageinfo">
 <?php
 	if ( $hasFooterLinks ) {
