@@ -101,7 +101,6 @@ class TruglassTemplate extends BaseTemplate {
 					<table class="fullwidth" id="bC">
 						<tr>
 							<td id="realcontent">
-								<div id="mw-js-message" style="display:none;"></div>
 								<?php if ( $this->data['sitenotice'] ) { ?>
 								<div id="siteNotice">
 									<?php $this->html( 'sitenotice' ) ?>
