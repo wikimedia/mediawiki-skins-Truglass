@@ -346,8 +346,6 @@ div#title h1 {
 li#pt-userpage,
 li#pt-anonuserpage,
 li#pt-login {
-	/* user.gif doesn't exist */
-	/* background: url("user.gif") top left no-repeat; */
 	padding-left: 20px;
 	text-transform: none;
 }
