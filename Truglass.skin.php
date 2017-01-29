@@ -8,7 +8,7 @@
  * @author Elliott Franklin Cable <me@ell.io>
  * @author Jack Phoenix <jack@countervandalism.net>
  * @copyright Copyright © Elliott Franklin Cable
- * @copyright Copyright © 2009-2016 Jack Phoenix
+ * @copyright Copyright © 2009-2017 Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -268,6 +268,9 @@ class TruglassTemplate extends BaseTemplate {
 
 	function searchBox() {
 		global $wgLang;
+		// For grep: the following images are used here:
+		// searchleftcap.gif, searchleftcap_rtl.gif, searchrightcap.gif,
+		// searchrightcap_rtl.gif
 ?>
 						<!-- Search form -->
 						<div id="search" class="noprint">
