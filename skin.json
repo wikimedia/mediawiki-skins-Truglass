@@ -6,7 +6,7 @@
 		"Jack Phoenix"
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Truglass",
-	"description": "A sleek, stylish, simplified skin",
+	"descriptionmsg": "truglass-desc",
 	"license-name": "GPL-2.0+",
 	"type": "skin",
 	"ConfigRegistry": {
