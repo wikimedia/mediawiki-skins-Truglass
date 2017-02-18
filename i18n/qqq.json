@@ -1,4 +1,7 @@
 {
 	"@metadata": {},
-	"truglass-desc": "{{desc|name=Truglass|url=https://www.mediawiki.org/wiki/Skin:Truglass}}"
+	"truglass-desc": "{{desc|what=skin|name=Truglass|url=https://www.mediawiki.org/wiki/Skin:Truglass}}",
+	"truglass-footertext": "{{ignored}}",
+	"truglass-links": "This is shown as a section header in the sidebar.",
+	"truglass-welcome": "Welcome text shown as sitenotice on each page."
 }
