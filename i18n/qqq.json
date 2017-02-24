@@ -1,7 +1,11 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
 	"truglass-desc": "{{desc|what=skin|name=Truglass|url=https://www.mediawiki.org/wiki/Skin:Truglass}}",
 	"truglass-footertext": "{{ignored}}",
-	"truglass-links": "This is shown as a section header in the sidebar.",
+	"truglass-links": "This is shown as a section header in the sidebar.\n{{Identical|Link}}",
 	"truglass-welcome": "Welcome text shown as sitenotice on each page."
 }

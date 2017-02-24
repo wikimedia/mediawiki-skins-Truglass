@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Misiek95"
+			"Misiek95",
+			"Chrumps"
 		]
 	},
+	"truglass-links": "Łącza {{GRAMMAR:D.lp|{{SITENAME}}}}",
 	"truglass-welcome": "Witaj na tej wiki! Ty też możesz zostawić tu swój wkład, klikając ''edytuj'' na górze strony!"
 }
