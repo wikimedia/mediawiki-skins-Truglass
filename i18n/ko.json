@@ -5,5 +5,6 @@
 		]
 	},
 	"truglass-desc": "매끈하고 우아하면서 단순한 스킨",
-	"truglass-links": "{{SITENAME}} 링크"
+	"truglass-links": "{{SITENAME}} 링크",
+	"truglass-welcome": "{{SITENAME}}에 오신 것을 환영합니다! 위의 편집 단추를 사용하여 무언가를 기여하세요!"
 }
