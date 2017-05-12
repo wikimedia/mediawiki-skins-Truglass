@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"烈羽"
+			"烈羽",
+			"Wehwei"
 		]
 	},
+	"truglass-desc": "光滑、時髦而簡練的屏膚。",
 	"truglass-links": "{{SITENAME}}連結",
 	"truglass-welcome": "歡迎來到{{SITENAME}}！按下上方的編輯鈕來貢獻些什麼吧！"
 }
