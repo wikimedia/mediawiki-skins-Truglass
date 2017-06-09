@@ -1,0 +1,15 @@
+/* Lazy fix for the Echo extension icons in the personal tools area to stop
+ * them from messing up the whole #ptools
+ */
+#ptools li#pt-notifications-alert,
+#ptools li#pt-notifications-notice {
+	display: inline-block;
+}
+
+#pt-notifications-alert .mw-echo-notifications-badge:after,
+#pt-notifications-notice .mw-echo-notifications-badge:after {
+	border-radius: .25em;
+	font-size: 1em;
+	text-shadow: none;
+	padding: .25em .5em;
+}

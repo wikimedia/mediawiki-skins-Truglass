@@ -1,6 +1,6 @@
 {
 	"name": "Truglass",
-	"version": "4.1.5",
+	"version": "4.1.6",
 	"author": [
 		"Elliott Franklin Cable",
 		"Jack Phoenix",
@@ -44,6 +44,7 @@
 	},
 	"ResourceModuleSkinStyles": {
 		"truglass": {
+			"+ext.echo.styles.badge": "truglass/echo.badge.css",
 			"+mediawiki.special.preferences.styles": "truglass/special.preferences.styles.css"
 		}
 	},
