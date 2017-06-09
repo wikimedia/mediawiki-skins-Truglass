@@ -1,0 +1,34 @@
+/*
+  Table pager (e.g. Special:FileList)
+  - remove underlines from the navigation link
+  - collapse borders
+  - set the borders to outsets (similar to Special:AllMessages)
+  - remove line wrapping for all td and th, set background color
+  - restore line wrapping for the last two table cells (description and size)
+*/
+.TablePager_nav a {
+	text-decoration: none;
+}
+
+.TablePager {
+	border-collapse: collapse;
+}
+
+.TablePager,
+.TablePager td,
+.TablePager th {
+	border: 0.15em solid #777;
+	padding: 0 0.15em 0 0.15em;
+}
+
+.TablePager th {
+	background-color: #eef;
+}
+
+.TablePager td {
+	background-color: #fff;
+}
+
+.TablePager tr:hover td {
+	background-color: #eef;
+}
