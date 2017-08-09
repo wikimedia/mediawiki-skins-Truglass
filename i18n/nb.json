@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"truglass-desc": "Ei pen, elegant og forenklet drakt",
+	"truglass-links": "{{SITENAME}}-lenker",
+	"truglass-welcome": "Velkommen til {{SITENAME}}! Bidra ved å bruke redigeringsknappen ovenfor!"
+}
