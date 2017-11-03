@@ -1,6 +1,6 @@
 {
 	"name": "Truglass",
-	"version": "4.1.6",
+	"version": "4.1.7",
 	"author": [
 		"Elliott Franklin Cable",
 		"Jack Phoenix",
@@ -22,8 +22,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinTruglass": "Truglass.skin.php",
-		"TruglassTemplate": "Truglass.skin.php"
+		"SkinTruglass": "includes/SkinTruglass.php",
+		"TruglassTemplate": "includes/TruglassTemplate.php"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
