@@ -4,5 +4,6 @@
 			"Mainframe98"
 		]
 	},
-	"truglass-links": "Koppelingen van {{SITENAME}}"
+	"truglass-links": "Koppelingen van {{SITENAME}}",
+	"truglass-welcome": "Welkom op {{SITENAME}}! Draag bij door op de bewerkknop hierboven te klikken!"
 }
