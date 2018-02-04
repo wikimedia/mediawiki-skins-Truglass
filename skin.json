@@ -38,8 +38,7 @@
 				"truglass/handheld.css": {
 					"media": "handheld"
 				}
-			},
-			"position": "top"
+			}
 		}
 	},
 	"ResourceModuleSkinStyles": {
