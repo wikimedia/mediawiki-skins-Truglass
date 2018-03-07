@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nikosgranturismogt"
+			"Nikosgranturismogt",
+			"Protnet"
 		]
 	},
-	"truglass-links": "{{SITENAME}} Σύνδεσμοι"
+	"truglass-links": "Σύνδεσμοι {{SITENAME}}"
 }
