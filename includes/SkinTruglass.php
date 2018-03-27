@@ -6,7 +6,7 @@
  */
 class SkinTruglass extends SkinTemplate {
 	public $skinname = 'truglass', $stylename = 'truglass',
-		$template = 'TruglassTemplate', $useHeadElement = true;
+		$template = 'TruglassTemplate';
 	/**
 	 * @var Config
 	 */
