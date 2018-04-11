@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jack Phoenix"
+			"Jack Phoenix",
+			"Pyscowicz"
 		]
 	},
+	"truglass-desc": "Huoliteltu, tyylikäs, yksinkertaistettu tyyli",
 	"truglass-links": "{{GRAMMAR:genitive|{{SITENAME}}}} linkit",
 	"truglass-welcome": "Tervetuloa {{GRAMMAR:illative|{{SITENAME}}}}! Lisää tietoa painamalla muokkaa-painiketta yläpuolella!"
 }
