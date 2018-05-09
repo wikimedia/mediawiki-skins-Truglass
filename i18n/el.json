@@ -5,5 +5,6 @@
 			"Protnet"
 		]
 	},
-	"truglass-links": "Σύνδεσμοι {{SITENAME}}"
+	"truglass-links": "Σύνδεσμοι {{SITENAME}}",
+	"truglass-welcome": "Καλωσήρθατε στο {{SITENAME}}! Συνεισφέρετε κάτι χρησιμοποιώντας το κουμπί επεξεργασίας παραπάνω!"
 }
