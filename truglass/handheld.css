@@ -686,10 +686,7 @@ special external link styling */
 /*
 ** Logo properties
 */
-
-@media handheld {
-	#p-logo { display: none }
-}
+#p-logo { display: none }
 
 /*
 ** the navigation portlet
@@ -1273,11 +1270,9 @@ tr.sv-space td { display: none; }
 .mw-summary-preview {
 	margin: 0.1em 0;
 }
-@media handheld {
-	.nonessential {
-		/* Kill big bulky stuff that will clog up the screen */
-		display: none;
-	}
+.nonessential {
+	/* Kill big bulky stuff that will clog up the screen */
+	display: none;
 }
 
 /**
