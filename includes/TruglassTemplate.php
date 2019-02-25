@@ -8,7 +8,7 @@
  * @author Elliott Franklin Cable <me@ell.io>
  * @author Jack Phoenix
  * @copyright Copyright © Elliott Franklin Cable
- * @copyright Copyright © 2009-2017 Jack Phoenix
+ * @copyright Copyright © 2009-2019 Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -351,7 +351,7 @@ class TruglassTemplate extends BaseTemplate {
 	function customBox( $bar, $cont ) {
 		$portletAttribs = array(
 			'class' => 'sbmodule',
-			'id' => Sanitizer::escapeId( "sbm-$bar" )
+			'id' => Sanitizer::escapeIdForAttribute( "sbm-$bar" )
 		);
 		$tooltip = Linker::titleAttrib( "p-$bar" );
 		if ( $tooltip !== false ) {
