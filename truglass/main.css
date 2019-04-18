@@ -4,7 +4,7 @@
 ** @license GPL (http://www.gnu.org/copyleft/gpl.html)
 ** @author Elliott Franklin Cable <me@ell.io>
 ** @copyright © 2006-2007 Elliott Franklin Cable <me@ell.io>
-** @copyright © 2007-2017 Jack Phoenix -- fixes, standardization
+** @copyright © 2007-2019 Jack Phoenix -- fixes, standardization
 */
 
 /*------------------*
@@ -19,7 +19,7 @@ body {
 	font: 12px 'Lucida Grande', Geneva, Arial, Verdana, sans-serif;
 	color: #000;
 }
-form	{
+form {
 	margin: 0;
 	padding: 0;
 }
@@ -180,6 +180,11 @@ li {
 }
 ul ul.circle {
 	margin-top: .3em;
+}
+
+/* Hide empty list items (T192446) */
+.mw-empty-elt {
+	display: none;
 }
 
 .smalllis li,
