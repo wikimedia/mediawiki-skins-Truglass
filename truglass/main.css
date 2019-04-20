@@ -1685,20 +1685,6 @@ span.changedby {
 	display: none;
 }
 
-.editExternally {
-	border: 1px solid gray;
-	background-color: #ffffff;
-	padding: 3px;
-	margin-top: 0.5em;
-	float: left;
-	font-size: small;
-	text-align: center;
-}
-.editExternallyHelp {
-	font-style: italic;
-	color: gray;
-}
-
 li span.deleted, span.history-deleted {
 	text-decoration: line-through;
 	color: #888;
