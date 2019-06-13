@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Reza1615"
+			"Reza1615",
+			"FarsiNevis"
 		]
 	},
-	"truglass-links": "پیوندهای {{SITENAME}}"
+	"truglass-desc": "پوسته‌ای شیک و تمیز و ساده",
+	"truglass-links": "پیوندهای {{SITENAME}}",
+	"truglass-welcome": "به {{SITENAME}} خوش آمدید. مشارکت خود را با استفاده از دکمهٔ «ویرایش» در بالا آغاز کنید."
 }
