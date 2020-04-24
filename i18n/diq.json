@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"1917 Ekim Devrimi",
 			"Mirzali"
 		]
 	},
-	"truglass-links": "Gıreyên {{SITENAME}}"
+	"truglass-desc": "Forsın, stilın, asayışo basit",
+	"truglass-links": "Gıreyên {{SITENAME}}",
+	"truglass-welcome": "Şıma xeyr amey {{SITENAME}}! Cor de taba vurnayışi karnayışiya iştirak bıkerê!"
 }
