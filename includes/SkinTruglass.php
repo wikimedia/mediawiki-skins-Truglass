@@ -27,7 +27,7 @@ class SkinTruglass extends SkinTemplate {
 	/**
 	 * Override to pass our Config instance to it
 	 */
-	public function setupTemplate( $classname, $repository = false, $cache_dir = false ) {
+	public function setupTemplate( $classname ) {
 		return new $classname( $this->truglassConfig );
 	}
 }
