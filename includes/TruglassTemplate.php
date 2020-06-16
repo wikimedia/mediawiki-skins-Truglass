@@ -8,7 +8,7 @@
  * @author Elliott Franklin Cable <me@ell.io>
  * @author Jack Phoenix
  * @copyright Copyright © Elliott Franklin Cable
- * @copyright Copyright © 2009-2019 Jack Phoenix
+ * @copyright Copyright © 2009-2020 Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -233,19 +233,19 @@ class TruglassTemplate extends BaseTemplate {
 	}
 
 	function searchBox() {
-		global $wgLang;
 		// For grep: the following images are used here:
 		// searchleftcap.gif, searchleftcap_rtl.gif, searchrightcap.gif,
 		// searchrightcap_rtl.gif
+		$isRTL = $this->getSkin()->getLanguage()->isRTL();
 ?>
 						<!-- Search form -->
 						<div id="search" class="noprint">
 							<form name="searchform" action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
 								<input type="hidden" name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
 								<input type="hidden" name="fulltext" class="searchButton" value="<?php $this->msg( 'search' ) ?>" />
-								<img src="<?php $this->text( 'stylepath' ) ?>/Truglass/<?php $this->text( 'stylename' ) ?>/searchleftcap<?php if( $wgLang->isRTL() ) echo '_rtl'; ?>.gif" alt="" width="17" height="19" border="0" id="s1" class="srchimgs" />
+								<img src="<?php $this->text( 'stylepath' ) ?>/Truglass/<?php $this->text( 'stylename' ) ?>/searchleftcap<?php if ( $isRTL ) echo '_rtl'; ?>.gif" alt="" width="17" height="19" border="0" id="s1" class="srchimgs" />
 								<input type="text" name="search" class="sbox" id="q01" <?php if( $this->haveMsg( 'accesskey-search' ) ) { ?>accesskey="<?php $this->msg( 'accesskey-search' ) ?>"<?php } if( isset( $this->data['search'] ) ) { ?> value="<?php $this->text( 'search' ) ?>"<?php } ?> />
-								<img src="<?php $this->text( 'stylepath' ) ?>/Truglass/<?php $this->text( 'stylename' ) ?>/searchrightcap<?php if( $wgLang->isRTL() ) echo '_rtl'; ?>.gif" alt="" width="9" height="19" border="0" id="s2" class="srchimgs" />
+								<img src="<?php $this->text( 'stylepath' ) ?>/Truglass/<?php $this->text( 'stylename' ) ?>/searchrightcap<?php if ( $isRTL ) echo '_rtl'; ?>.gif" alt="" width="9" height="19" border="0" id="s2" class="srchimgs" />
 							</form>
 						</div>
 						<!-- //Search form -->
