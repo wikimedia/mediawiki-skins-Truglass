@@ -113,7 +113,7 @@ class TruglassTemplate extends BaseTemplate {
 				</div>
 				<div id="nN">
 					<div class="networknavback">
-					<?php $navlinks = array( 'privacy', 'about', 'disclaimer' ); ?>
+					<?php $navlinks = [ 'privacy', 'about', 'disclaimer' ]; ?>
 						<sup><small><?php $this->html( $navlinks[0] ) ?></small></sup>
 					<?php
 						foreach ( array_slice( $navlinks, 1 ) as $nLink ) {
@@ -135,10 +135,10 @@ class TruglassTemplate extends BaseTemplate {
 	// I can't figure out how to remove copyright, privacy, about and disclaimer
 	// from the array that getFooterLinks() returns, so this will unfortunately
 	// have to do [[for now]]
-	$validFooterLinks = array(
+	$validFooterLinks = [
 		'lastmod', 'viewcount', 'numberofwatchingusers', 'credits', /*'copyright',
 		'privacy', 'about', 'disclaimer',*/ 'tagline',
-	);
+	];
 
 	$footerMessage = wfMessage( 'truglass-footertext' );
 
@@ -286,7 +286,7 @@ class TruglassTemplate extends BaseTemplate {
 
 		// Avoid PHP 7.1 warning of passing $this by reference
 		$template = $this;
-		Hooks::run( 'SkinTemplateToolboxEnd', array( &$template, true ) );
+		Hooks::run( 'SkinTemplateToolboxEnd', [ &$template, true ] );
 ?>
 						</ul>
 					</div>
@@ -304,7 +304,7 @@ class TruglassTemplate extends BaseTemplate {
 						<div class="sbmodulebody">
 							<div class="stretcher">
 								<ul>
-<?php							foreach( $this->data['language_urls'] as $key => $langlink ) {
+<?php							foreach ( $this->data['language_urls'] as $key => $langlink ) {
 									echo $this->makeListItem( $key, $langlink );
 								}
 								?>
@@ -349,10 +349,10 @@ class TruglassTemplate extends BaseTemplate {
 	 * @param $cont array|string
 	 */
 	function customBox( $bar, $cont ) {
-		$portletAttribs = array(
+		$portletAttribs = [
 			'class' => 'sbmodule',
 			'id' => Sanitizer::escapeIdForAttribute( "sbm-$bar" )
-		);
+		];
 		$tooltip = Linker::titleAttrib( "p-$bar" );
 		if ( $tooltip !== false ) {
 			$portletAttribs['title'] = $tooltip;
