@@ -4,7 +4,7 @@
 ** @license GPL (http://www.gnu.org/copyleft/gpl.html)
 ** @author Elliott Franklin Cable <me@ell.io>
 ** @copyright © 2006-2007 Elliott Franklin Cable <me@ell.io>
-** @copyright © 2007-2019 Jack Phoenix -- fixes, standardization
+** @copyright © 2007-2020 Jack Phoenix -- fixes, standardization
 */
 
 /*------------------*
@@ -341,6 +341,9 @@ div#title h1 {
 	font-size: 11px;
 	color: #444;
 	text-shadow: #fff 0px 1px 0px;
+}
+/* Explicitly whitelist [[mw:Extension:Echo]] elements to prevent losing their icons */
+#ptools li a:not(.mw-echo-notifications-badge) {
 	background: none;
 }
 #ptools li a:hover {
