@@ -809,6 +809,11 @@ a.feed:hover,
 	margin-left: -3px; /* Fix IE bug */
 }
 
+/* EPIC HACK to align the search suggestions box correctly */
+div.suggestions {
+	left: 1.9em !important;
+}
+
 /* sitemap */
 /*.dropdown {
 	font: 10px "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;

@@ -244,7 +244,7 @@ class TruglassTemplate extends BaseTemplate {
 								<input type="hidden" name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
 								<input type="hidden" name="fulltext" class="searchButton" value="<?php $this->msg( 'search' ) ?>" />
 								<img src="<?php $this->text( 'stylepath' ) ?>/Truglass/<?php $this->text( 'stylename' ) ?>/searchleftcap<?php if ( $isRTL ) echo '_rtl'; ?>.gif" alt="" width="17" height="19" border="0" id="s1" class="srchimgs" />
-								<input type="text" name="search" class="sbox" id="q01" <?php if( $this->haveMsg( 'accesskey-search' ) ) { ?>accesskey="<?php $this->msg( 'accesskey-search' ) ?>"<?php } if( isset( $this->data['search'] ) ) { ?> value="<?php $this->text( 'search' ) ?>"<?php } ?> />
+								<input type="text" name="search" class="sbox" id="searchInput" <?php if( $this->haveMsg( 'accesskey-search' ) ) { ?>accesskey="<?php $this->msg( 'accesskey-search' ) ?>"<?php } if( isset( $this->data['search'] ) ) { ?> value="<?php $this->text( 'search' ) ?>"<?php } ?> />
 								<img src="<?php $this->text( 'stylepath' ) ?>/Truglass/<?php $this->text( 'stylename' ) ?>/searchrightcap<?php if ( $isRTL ) echo '_rtl'; ?>.gif" alt="" width="9" height="19" border="0" id="s2" class="srchimgs" />
 							</form>
 						</div>
