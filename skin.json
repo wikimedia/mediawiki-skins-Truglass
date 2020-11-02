@@ -45,6 +45,7 @@
 		"truglass": {
 			"+ext.echo.styles.badge": "truglass/echo.badge.css",
 			"+mediawiki.action.history.styles": "truglass/mediawiki.action.history.styles.css",
+			"+mediawiki.action.view.filepage": "truglass/mediawiki.action.view.filepage.css",
 			"+mediawiki.pager.tablePager": "truglass/mediawiki.pager.tablePager.css",
 			"+mediawiki.special.preferences.styles": "truglass/special.preferences.styles.css"
 		}
