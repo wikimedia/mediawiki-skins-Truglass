@@ -1,6 +1,6 @@
 {
 	"name": "Truglass",
-	"version": "4.1.7",
+	"version": "4.1.8",
 	"author": [
 		"Elliott Franklin Cable",
 		"Jack Phoenix",
@@ -10,6 +10,9 @@
 	"descriptionmsg": "truglass-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
 	"ConfigRegistry": {
 		"truglass": "GlobalVarConfig::newInstance"
 	},
@@ -31,6 +34,12 @@
 	},
 	"ResourceModules": {
 		"skins.truglass": {
+			"class": "ResourceLoaderSkinModule",
+			"features": [
+				"content",
+				"interface",
+				"legacy"
+			],
 			"styles": {
 				"truglass/main.css": {
 					"media": "screen"
@@ -47,8 +56,7 @@
 			"+mediawiki.action.history.styles": "truglass/mediawiki.action.history.styles.css",
 			"+mediawiki.action.view.filepage": "truglass/mediawiki.action.view.filepage.css",
 			"+mediawiki.page.gallery.styles": "truglass/mediawiki.page.gallery.styles.css",
-			"+mediawiki.pager.tablePager": "truglass/mediawiki.pager.tablePager.css",
-			"+mediawiki.special.preferences.styles": "truglass/special.preferences.styles.css"
+			"+mediawiki.pager.tablePager": "truglass/mediawiki.pager.tablePager.css"
 		}
 	},
 	"config": {
