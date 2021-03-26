@@ -52,8 +52,11 @@
 			"+ext.echo.styles.badge": "truglass/echo.badge.css",
 			"+mediawiki.action.history.styles": "truglass/mediawiki.action.history.styles.css",
 			"+mediawiki.action.view.filepage": "truglass/mediawiki.action.view.filepage.css",
+			"+mediawiki.action.view.redirectPage": "truglass/mediawiki.action.view.redirectPage.css",
+			"+mediawiki.diff.styles": "truglass/mediawiki.diff.styles.css",
 			"+mediawiki.page.gallery.styles": "truglass/mediawiki.page.gallery.styles.css",
-			"+mediawiki.pager.tablePager": "truglass/mediawiki.pager.tablePager.css"
+			"+mediawiki.pager.tablePager": "truglass/mediawiki.pager.tablePager.css",
+			"+mediawiki.special.userlogin.common.styles": "truglass/mediawiki.special.userlogin.common.styles.css"
 		}
 	},
 	"config": {

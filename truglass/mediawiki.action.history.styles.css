@@ -3,3 +3,35 @@ span.updatedmarker {
 	background-color: #0f0;
 	color: #000;
 }
+
+/* the auto-generated edit comments */
+#bC .autocomment {
+	color: gray;
+}
+
+#bC #pagehistory span.user {
+	margin-left: 1.4em;
+	margin-right: .4em;
+}
+
+#bC #pagehistory span.minor {
+	font-weight: bold;
+}
+
+#bC #pagehistory {
+	list-style: none;
+	list-style-type: none;
+}
+
+#bC #pagehistory li {
+	border: 1px solid white;
+	margin-left: 16px;
+}
+
+#bC #pagehistory li.selected {
+	background-color: #f9f9f9;
+	border: 1px dashed #aaa;
+	padding-left: 4px;
+	margin-left: 0px;
+	font-size: 115%;
+}

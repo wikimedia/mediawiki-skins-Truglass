@@ -1,0 +1,28 @@
+/*
+** Diff rendering
+*/
+#bC table.diff,
+td.diff-otitle,
+td.diff-ntitle {
+	background-color: white;
+}
+
+#bC td.diff-addedline {
+	background: #cfc;
+	font-size: smaller;
+}
+
+#bC td.diff-deletedline {
+	background: #ffa;
+	font-size: smaller;
+}
+
+#bC td.diff-context {
+	background: #eee;
+	font-size: smaller;
+}
+
+#bC span.diffchange {
+	color: red;
+	font-weight: bold;
+}
