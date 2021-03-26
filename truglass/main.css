@@ -1432,10 +1432,6 @@ span.subpages {
 	border-width: .5em 1.4em .8em 0;
 }
 
-#bC .hiddenStructure {
-	display: none;
-	speak: none;
-}
 #bC img.tex {
 	vertical-align: middle;
 }
