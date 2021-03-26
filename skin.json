@@ -43,9 +43,6 @@
 			"styles": {
 				"truglass/main.css": {
 					"media": "screen"
-				},
-				"truglass/handheld.css": {
-					"media": "handheld"
 				}
 			}
 		}
