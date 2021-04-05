@@ -17,13 +17,6 @@ class SkinTruglass extends SkinTemplate {
 		$this->truglassConfig = ConfigFactory::getDefaultInstance()->makeConfig( 'truglass' );
 	}
 
-	function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
-
-		// Add CSS
-		$out->addModuleStyles( 'skins.truglass' );
-	}
-
 	/**
 	 * Override to pass our Config instance to it
 	 */
