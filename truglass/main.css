@@ -1475,122 +1475,20 @@ span.subpages {
 	margin: 0;
 	padding: 0;
 }
-/* Page history styling */
-/* the auto-generated edit comments */
-#bC .autocomment {
-	color: gray;
-}
-#bC #pagehistory span.user {
-	margin-left: 1.4em;
-	margin-right: .4em;
-}
-#bC #pagehistory span.minor {
-	font-weight: bold;
-}
-#bC #pagehistory {
-	list-style: none;
-	list-style-type: none;
-}
-#bC #pagehistory li {
-	border: 1px solid white;
-	margin-left: 16px;
-}
-#bC #pagehistory li.selected {
-	background-color: #f9f9f9;
-	border: 1px dashed #aaa;
-	padding-left: 4px;
-	margin-left: 0px;
-	font-size: 115%;
-}
 
-/*
-** Diff rendering
-*/
-#bC table.diff, td.diff-otitle, td.diff-ntitle {
-	background-color: white;
-}
-#bC td.diff-addedline {
-	background: #cfc;
-	font-size: smaller;
-}
-#bC td.diff-deletedline {
-	background: #ffa;
-	font-size: smaller;
-}
-#bC td.diff-context {
-	background: #eee;
-	font-size: smaller;
-}
-#bC span.diffchange {
-	color: red;
-	font-weight: bold;
-}
-
-div#userloginForm form,
-div#userlogin form#userlogin2 {
-	margin: 0 3em 1em 0;
-	border: 1px solid #aaa;
-	clear: both;
-	padding: 1.5em 2em;
-	background-color: #f9f9f9;
-	float: left;
-}
-
-div#userloginForm table,
-div#userlogin form#userlogin2 table {
-	background-color: #f9f9f9;
-}
-
-div#userloginForm h2,
-div#userlogin form#userlogin2 h2 {
-	padding-top: 0;
-}
-
-div#userlogin .captcha {
-	border: 1px solid #bbb;
-	padding: 1.5em 2em;
-	width: 400px;
-	background-color: white;
-}
-
-#userloginprompt, #languagelinks {
-	font-size: 85%;
-}
-
-#login-sectiontip {
-	font-size: 85%;
-	line-height: 1.2;
-	padding-top: 2em;
-}
-
-#userlogin .loginText, #userlogin .loginPassword {
-	width: 12em;
-}
-
-#userloginlink a, #wpLoginattempt, #wpCreateaccount {
-	font-weight: bold;
-}
-
-div#userloginForm #wpPassword1 {
-	/* @embed */
-	background-image: url("password.png");
-	background-position: right;
-	background-repeat: no-repeat;
-	padding-right: 20px;
-}
-
-.redirectText {
-	font-size: 150%;
-	margin: 5px;
-}
-
+/* Only used on Special:NewPages? */
 .not-patrolled {
 	background-color: #ffa;
 }
+
+/* Used @ DifferenceEngine but also @ Article.php; doesn't seem that there's an appropriate RL module we could hook into
+ * in order to move this rule out of this file :(
+ */
 div.patrollink {
 	font-size: 75%;
 	text-align: right;
 }
+
 span.newpage, span.minor, span.searchmatch, span.bot {
 	font-weight: bold;
 }
@@ -1601,9 +1499,6 @@ span.unpatrolled {
 
 span.searchmatch {
 	color: red;
-}
-.sharedUploadNotice {
-	font-style: italic;
 }
 
 span.newpageletter {

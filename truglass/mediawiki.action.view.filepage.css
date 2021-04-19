@@ -20,7 +20,10 @@ table.mw_metadata th {
 	background-color: #f9f9f9;
 }
 
-
 table.collapsed tr.collapsable {
 	display: none;
+}
+
+.sharedUploadNotice {
+	font-style: italic;
 }
