@@ -17,7 +17,16 @@
 		"truglass": "GlobalVarConfig::newInstance"
 	},
 	"ValidSkinNames": {
-		"truglass": "Truglass"
+		"truglass": {
+			"displayname": "Truglass",
+			"class": "SkinTruglass",
+			"args": [ {
+				"name": "truglass",
+				"styles": [
+					"skins.truglass"
+				]
+			} ]
+		}
 	},
 	"MessagesDirs": {
 		"SkinTruglass": [
