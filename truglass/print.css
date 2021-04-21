@@ -1,0 +1,4 @@
+/* Hide the "jump to" links in printable view */
+.mw-jump {
+	display: none;
+}
