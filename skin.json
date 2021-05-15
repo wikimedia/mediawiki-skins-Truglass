@@ -44,11 +44,11 @@
 	"ResourceModules": {
 		"skins.truglass": {
 			"class": "ResourceLoaderSkinModule",
-			"features": [
-				"content",
-				"interface",
-				"legacy"
-			],
+			"features": {
+				"content": true,
+				"interface": true,
+				"legacy": true
+			},
 			"styles": {
 				"truglass/main.css": {
 					"media": "screen"
