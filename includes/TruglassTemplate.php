@@ -8,7 +8,7 @@
  * @author Elliott Franklin Cable <me@ell.io>
  * @author Jack Phoenix
  * @copyright Copyright © Elliott Franklin Cable
- * @copyright Copyright © 2009-2021 Jack Phoenix
+ * @copyright Copyright © 2009-2022 Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -113,7 +113,14 @@ class TruglassTemplate extends BaseTemplate {
 				</div>
 				<div id="nN">
 					<div class="networknavback">
-					<?php $navlinks = [ 'privacy', 'about', 'disclaimer' ]; ?>
+					<?php
+						$navlinks = [ 'privacy', 'about', 'disclaimer' ];
+						// Add MobileFrontend toggle link if both MF and the Minerva skin are enabled
+						// @todo FIXME: so hacky!
+						if ( class_exists( 'MobileContext' ) && class_exists( 'SkinMinerva' ) ) {
+							$navlinks[] = 'mobileview';
+						}
+					?>
 						<sup><small><?php $this->html( $navlinks[0] ) ?></small></sup>
 					<?php
 						foreach ( array_slice( $navlinks, 1 ) as $nLink ) {
