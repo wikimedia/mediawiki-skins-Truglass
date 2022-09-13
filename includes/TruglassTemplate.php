@@ -23,7 +23,6 @@ class TruglassTemplate extends BaseTemplate {
 	public function execute() {
 		$this->data['pageLanguage'] = $this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
 
-		$this->html( 'headelement' );
 ?><div id="main">
 	<table class="fullwidth container" cellpadding="0">
 		<tr>
@@ -198,9 +197,6 @@ class TruglassTemplate extends BaseTemplate {
 	</div>
 </div>
 <?php endif;
-		$this->printTrail();
-		echo Html::closeElement( 'body' );
-		echo Html::closeElement( 'html' );
 	} // end of execute() method
 
 	/*************************************************************************************************/
@@ -243,16 +239,18 @@ class TruglassTemplate extends BaseTemplate {
 		// For grep: the following images are used here:
 		// searchleftcap.gif, searchleftcap_rtl.gif, searchrightcap.gif,
 		// searchrightcap_rtl.gif
-		$isRTL = $this->getSkin()->getLanguage()->isRTL();
+		$skin = $this->getSkin();
+		$isRTL = $skin->getLanguage()->isRTL();
+		$stylepath =  $skin->getConfig()->get( 'StylePath' ) . '/Truglass/truglass';
 ?>
 						<!-- Search form -->
 						<div id="search" class="noprint">
 							<form name="searchform" action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
 								<input type="hidden" name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
 								<input type="hidden" name="fulltext" class="searchButton" value="<?php $this->msg( 'search' ) ?>" />
-								<img src="<?php $this->text( 'stylepath' ) ?>/Truglass/<?php $this->text( 'stylename' ) ?>/searchleftcap<?php if ( $isRTL ) echo '_rtl'; ?>.gif" alt="" width="17" height="19" border="0" id="s1" class="srchimgs" />
+								<img src="<?php echo $stylepath ?>/searchleftcap<?php if ( $isRTL ) echo '_rtl'; ?>.gif" alt="" width="17" height="19" border="0" id="s1" class="srchimgs" />
 								<input type="text" name="search" class="sbox" id="searchInput" <?php if( $this->haveMsg( 'accesskey-search' ) ) { ?>accesskey="<?php $this->msg( 'accesskey-search' ) ?>"<?php } if( isset( $this->data['search'] ) ) { ?> value="<?php $this->text( 'search' ) ?>"<?php } ?> />
-								<img src="<?php $this->text( 'stylepath' ) ?>/Truglass/<?php $this->text( 'stylename' ) ?>/searchrightcap<?php if ( $isRTL ) echo '_rtl'; ?>.gif" alt="" width="9" height="19" border="0" id="s2" class="srchimgs" />
+								<img src="<?php echo $stylepath ?>/searchrightcap<?php if ( $isRTL ) echo '_rtl'; ?>.gif" alt="" width="9" height="19" border="0" id="s2" class="srchimgs" />
 							</form>
 						</div>
 						<!-- //Search form -->

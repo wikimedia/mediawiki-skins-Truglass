@@ -11,7 +11,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"ConfigRegistry": {
 		"truglass": "GlobalVarConfig::newInstance"
@@ -19,9 +19,11 @@
 	"ValidSkinNames": {
 		"truglass": {
 			"displayname": "Truglass",
-			"class": "SkinTruglass",
+			"class": "SkinTemplate",
 			"args": [ {
 				"name": "truglass",
+				"template": "TruglassTemplate",
+				"bodyOnly": true,
 				"styles": [
 					"skins.truglass"
 				]
@@ -34,7 +36,6 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinTruglass": "includes/SkinTruglass.php",
 		"TruglassTemplate": "includes/TruglassTemplate.php"
 	},
 	"ResourceFileModulePaths": {
@@ -45,9 +46,15 @@
 		"skins.truglass": {
 			"class": "ResourceLoaderSkinModule",
 			"features": {
-				"content": true,
 				"interface": true,
-				"legacy": true
+				"content-links": true,
+				"content-media": true,
+				"interface-message-box": true,
+				"interface-category": true,
+				"content-tables": true,
+				"i18n-ordered-lists": true,
+				"i18n-all-lists-margins": true,
+				"i18n-headings": true
 			},
 			"styles": {
 				"truglass/main.css": {
