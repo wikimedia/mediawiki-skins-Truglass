@@ -4,7 +4,7 @@
 ** @license GPL (http://www.gnu.org/copyleft/gpl.html)
 ** @author Elliott Franklin Cable <me@ell.io>
 ** @copyright © 2006-2007 Elliott Franklin Cable <me@ell.io>
-** @copyright © 2007-2020 Jack Phoenix -- fixes, standardization
+** @copyright © 2007-2023 Jack Phoenix -- fixes, standardization
 */
 
 /*------------------*
@@ -313,9 +313,6 @@ I'm commenting this out because headertitle.gif does not exist
 	font-size: 20px !important;
 	color: #56595c;
 	text-shadow: #fff 0px 1px 0px;
-}
-#header span {
-	display: none;
 }
 
 div#title h1 {
