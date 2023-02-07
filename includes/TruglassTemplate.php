@@ -8,7 +8,7 @@
  * @author Elliott Franklin Cable <me@ell.io>
  * @author Jack Phoenix
  * @copyright Copyright © Elliott Franklin Cable
- * @copyright Copyright © 2009-2022 Jack Phoenix
+ * @copyright Copyright © 2009-2023 Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -47,7 +47,7 @@ class TruglassTemplate extends BaseTemplate {
 			</td>
 		</tr>
 		<tr>
-			<td class="contentshell">
+			<td class="contentshell" data-mw-ve-target-container>
 				<table class="cbar noprint">
 					<tbody>
 						<tr>
