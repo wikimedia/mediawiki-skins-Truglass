@@ -206,6 +206,7 @@ class TruglassTemplate extends BaseTemplate {
 	 */
 	protected function renderPortals( $sidebar ) {
 		if ( !isset( $sidebar['SEARCH'] ) ) {
+			// @phan-suppress-next-line PhanTypeMismatchDimAssignment
 			$sidebar['SEARCH'] = false; // changed
 		}
 		if ( !isset( $sidebar['TOOLBOX'] ) ) {
