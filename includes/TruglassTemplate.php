@@ -54,7 +54,7 @@ class TruglassTemplate extends BaseTemplate {
 							<td>
 							<?php foreach ( $this->data['content_actions'] as $key => $tab ) { ?>
 								<?php if ( !preg_match( "/^(article|talk|nstab-main|nstab-user|nstab-wp|nstab-image|nstab-mediawiki|nstab-template|nstab-help|nstab-category)$/", $key ) ) { ?>
-									<span id="ca-<?php echo htmlspecialchars( $key ) ?>"><a href="<?php echo htmlspecialchars( $tab['href'] ) ?>"<?php if ( isset( $tab['class'] ) && $tab['class'] ) { ?> class="<?php echo htmlspecialchars( $tab['class'] ) ?>"<?php } ?> title="<?php echo Linker::titleAttrib( $tab['id'], 'withaccess' ) ?>" accesskey="<?php echo Linker::accesskey( $tab['id'] ) ?>"><?php echo htmlspecialchars( $tab['text'] ) ?></a></span>
+									<span id="ca-<?php echo htmlspecialchars( $key ) ?>"><a href="<?php echo htmlspecialchars( $tab['href'] ) ?>"<?php if ( isset( $tab['class'] ) && $tab['class'] ) { ?> class="<?php echo htmlspecialchars( $tab['class'] ) ?>"<?php } ?> title="<?php echo htmlspecialchars( Linker::titleAttrib( $tab['id'], 'withaccess' ), ENT_QUOTES ) ?>" accesskey="<?php echo htmlspecialchars( Linker::accesskey( $tab['id'] ), ENT_QUOTES ) ?>"><?php echo htmlspecialchars( $tab['text'] ) ?></a></span>
 								<?php } ?>
 							<?php } ?>
 							</td>
