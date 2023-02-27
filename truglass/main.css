@@ -117,12 +117,10 @@ CSS version, which is evident with Truglass :-(
 
 #nN {
 	padding: 0 25px 0 0;
-	/* @embed */
 	background: url("bottom_rightcap_ltr.gif") bottom right no-repeat;
 }
 #nN .networknavback {
 	padding: 0 0 13px 0;
-	/* @embed */
 	background: url("bottom.gif") bottom left no-repeat;
 	font-variant: small-caps;
 	text-align: center;
@@ -136,7 +134,6 @@ CSS version, which is evident with Truglass :-(
 }
 #nN .feed {
 	padding-left: 18px !important;
-	/* @embed */
 	background-image: url('feed.png') !important;
 }
 
@@ -290,11 +287,9 @@ div.clearer {
 /* top and bottom caps, and breadcrumbs */
 #header {
 	padding: 0 25px 0 0;
-	/* @embed */
 	background: url("header_rightcap.gif") right -23px no-repeat;
 }
 #header .headerback {
-	/* @embed */
 	background: url("header.gif") 0px -23px no-repeat;
 }
 
@@ -441,11 +436,9 @@ h1#title {
 
 #bottom {
 	padding: 0 25px 0 0;
-	/* @embed */
 	background: url("bottom_rightcap_ltr.gif") bottom right no-repeat;
 }
 #bottom .bottomback {
-	/* @embed */
 	background: url("bottom.gif") bottom left no-repeat;
 }
 
@@ -463,26 +456,22 @@ h1#title {
 .bottomline {
 	padding: 0 25px 0 0;
 	height: 1px;
-	/* @embed */
 	background: url("bottomline.gif") top right no-repeat;
 }
 .bottomline div {
 	height: 1px;
-	/* @embed */
 	background: url("bottomline.gif") top left no-repeat;
 }
 
 .toplineone {
 	padding: 0 171px 0 0;
 	height: 3px;
-	/* @embed */
 	background: url('sidebarshadow.gif') top right no-repeat;
 	overflow: hidden;
 	clear: both;
 }
 .toplineone div {
 	height: 3px;
-	/* @embed */
 	background: url("contentshadow.gif") top left no-repeat;
 	overflow: hidden;
 }
@@ -490,22 +479,18 @@ h1#title {
 .toplinetwo {
 	padding: 0 25px 0 0;
 	height: 3px;
-	/* @embed */
 	background: url("contentshadow.gif") top right no-repeat;
 }
 .toplinetwo div {
 	height: 3px;
-	/* @embed */
 	background: url("contentshadow.gif") top left no-repeat;
 }
 
 td.contentshell {
-	/* @embed */
 	background: url("leftside.gif") top left repeat-y;
 }
 td.sidebar {
 	width: 171px;
-	/* @embed */
 	background: #e5e6e8 url("sidebar.gif") top right repeat-y;
 }
 
@@ -532,26 +517,22 @@ td.sidebar {
 	margin-bottom: 1px;
 }
 .sbmodulebody {
-	/* @embed */
 	background: #fff url('sbmodulebody.gif') bottom left repeat-x;
 	padding: 6px 8px 8px 8px;
 }
 .sbmodule h3 {
 	line-height: 13px;
 	padding: 5px 8px 5px 8px;
-	/* @embed */
 	background: #e2eeff url('sbmoduletopblue.gif') top left no-repeat;
 }
 .sbmodule h3.blue {
 	line-height: 13px;
 	padding: 5px 8px 5px 8px;
-	/* @embed */
 	background: #e2eeff url('sbmoduletopblue.gif') top left no-repeat;
 }
 .sbmodule h4 {
 	line-height: 13px;
 	padding: 5px 8px 5px 8px;
-	/* @embed */
 	background: #e2eeff url('sbmoduletopblue.gif') top left no-repeat;
 }
 .sbmodule h4.sbmoduletitle {
@@ -563,7 +544,6 @@ td.sidebar {
 	padding-right: 5px;
 	padding-bottom: 6px;
 	height: 5px;
-	/* @embed */
 	background: #FFF url('sbmoduletopwhite.gif') top left repeat-x;
 }
 .sbmodule h4.hide {
@@ -571,7 +551,6 @@ td.sidebar {
 	padding: 0;
 	font-size: 1px;
 	height: 5px;
-	/* @embed */
 	background: #FFF url('sbmoduletopwhite.gif') top left repeat-x;
 }
 
@@ -602,7 +581,6 @@ a, a, a:visited, a:active, a:hover {
 
 .feed {
 	padding-left: 14px;
-	/* @embed */
 	background: transparent url('feed.png') center left no-repeat !important;
 }
 a.feed,
@@ -725,7 +703,6 @@ a.feed:hover,
 	width: 100%;
 }
 .cbar td {
-	/* @embed */
 	background: #658296 url("gradient_tcat.gif") repeat-x;
 	border: none;
 	color: #FFFFFF;
@@ -785,7 +762,6 @@ a.feed:hover,
 	color: #80808C;
 	height: 18px;
 	border: 0;
-	/* @embed */
 	background: white url("searchbg.gif") repeat-x left top;
 	margin-top: 3px;
 }
@@ -1026,7 +1002,6 @@ div.suggestions {
 	margin: 0px;
 	height: 4px;
 	width: 135px;
-	/* @embed */
 	background: #FFFFFF url('roundgrey_top.gif') bottom center no-repeat;
 }
 .infobox .ibbody {
@@ -1041,7 +1016,6 @@ div.suggestions {
 	margin: 0px;
 	height: 5px;
 	width: 135px;
-	/* @embed */
 	background: #FFFFFF url('roundgrey_bottom.gif') top center no-repeat;
 }
 
@@ -1214,7 +1188,6 @@ span.subpages {
 
 /* user notification thing */
 #bC div.usermessage {
-	/* @embed */
 	background-image: url("bgviolet.gif");
 	background-position: top;
 	background-repeat: repeat-x;
