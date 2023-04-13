@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Dee"
 		]
 	},
-	"truglass-desc": "עיצוב מסוגנן, מלוטש, ומפושט",
+	"truglass-desc": "עיצוב מסוגנן, מלוטש ומפושט",
 	"truglass-links": "קישורי {{SITENAME}}",
 	"truglass-welcome": "ברוך בואך ל{{GRAMMAR:תחילית|{{SITENAME}}}}! אפשר לתרום כאן באמצעות כפתור העריכה למעלה!"
 }
