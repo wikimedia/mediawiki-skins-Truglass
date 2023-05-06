@@ -12,6 +12,8 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
+use MediaWiki\MediaWikiServices;
+
 class TruglassTemplate extends BaseTemplate {
 
 	/**
@@ -62,7 +64,7 @@ class TruglassTemplate extends BaseTemplate {
 					</tbody>
 				</table>
 				<div id="content">
-					<?php /* Hook point for ShoutWiki Ads extension */ Hooks::run( 'TruglassInContent' ); ?>
+					<?php /* Hook point for ShoutWiki Ads extension */ MediaWikiServices::getInstance()->getHookContainer()->run( 'TruglassInContent' ); ?>
 					<table class="fullwidth" id="bC">
 						<tr>
 							<td id="realcontent">
@@ -292,7 +294,7 @@ class TruglassTemplate extends BaseTemplate {
 
 		// Avoid PHP 7.1 warning of passing $this by reference
 		$template = $this;
-		Hooks::run( 'SkinTemplateToolboxEnd', [ &$template, true ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SkinTemplateToolboxEnd', [ &$template, true ] );
 ?>
 						</ul>
 					</div>
