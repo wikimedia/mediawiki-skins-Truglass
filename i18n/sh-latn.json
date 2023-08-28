@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Vlad5250"
 		]
 	},
-	"truglass-links": "Linkovi na {{GRAMMAR:dativ|{{SITENAME}}}}"
+	"truglass-desc": "Elegantna, stilski pojednostavljena tema",
+	"truglass-links": "Linkovi na {{GRAMMAR:dativ|{{SITENAME}}}}",
+	"truglass-welcome": "Dobro došli na projekt {{SITENAME}}! Doprinesite nešto klikom na dugme za uređivanje iznad!"
 }
