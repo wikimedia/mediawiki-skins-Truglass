@@ -23,7 +23,8 @@ class TruglassTemplate extends BaseTemplate {
 	 * outputs a formatted page.
 	 */
 	public function execute() {
-		$this->data['pageLanguage'] = $this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
+		$skin = $this->getSkin();
+		$this->data['pageLanguage'] = $skin->getTitle()->getPageViewLanguage()->getHtmlCode();
 
 ?><div id="main">
 	<table class="fullwidth container" cellpadding="0">
@@ -72,10 +73,10 @@ class TruglassTemplate extends BaseTemplate {
 								<div id="siteNotice">
 									<?php $this->html( 'sitenotice' ) ?>
 								</div>
-							<?php } elseif ( $this->getSkin()->getTitle()->getNamespace() != NS_SPECIAL ) { ?>
+							<?php } elseif ( $skin->getTitle()->getNamespace() != NS_SPECIAL ) { ?>
 								<div id="siteNotice">
 									<span class="sntext">
-										<?php echo wfMessage( 'truglass-welcome' )->parse(); ?>
+										<?php echo $skin->msg( 'truglass-welcome' )->parse(); ?>
 									</span>
 								</div>
 							<?php } ?>
@@ -148,7 +149,7 @@ class TruglassTemplate extends BaseTemplate {
 		'privacy', 'about', 'disclaimer',*/ 'tagline',
 	];
 
-	$footerMessage = wfMessage( 'truglass-footertext' );
+	$footerMessage = $skin->msg( 'truglass-footertext' );
 
 	// Horribly inelegant, unstable and otherwise hacky.
 	// I have no clue whatsoever why unset( $validFooterLinks['about'] );
@@ -335,7 +336,7 @@ class TruglassTemplate extends BaseTemplate {
 		if ( is_array( $sidebarLinks ) && !empty( $sidebarLinks ) ) {
 ?>
 					<div class="sbmodule" id="sbm-networknav">
-						<h4 class="sbmoduletitle displayer"><?php echo wfMessage( 'truglass-links' )->parse() ?></h4>
+						<h4 class="sbmoduletitle displayer"><?php echo $this->getSkin()->msg( 'truglass-links' )->parse() ?></h4>
 						<div class="sbmodulebody">
 							<div class="stretcher">
 								<ul>
@@ -365,10 +366,12 @@ class TruglassTemplate extends BaseTemplate {
 		if ( $tooltip !== false ) {
 			$portletAttribs['title'] = $tooltip;
 		}
+		$skin = $this->getSkin();
+		$msg = $skin->msg( $bar );
 		echo '	' . Html::openElement( 'div', $portletAttribs );
 ?>
 
-		<h4 class="sbmoduletitle displayer"><?php $msg = wfMessage( $bar ); echo htmlspecialchars( $msg->exists() ? $msg->text() : $bar ); ?></h4>
+		<h4 class="sbmoduletitle displayer"><?php echo htmlspecialchars( $msg->exists() ? $msg->text() : $bar ); ?></h4>
 		<div class="sbmodulebody">
 			<div class="stretcher">
 <?php	if ( is_array( $cont ) ) { ?>
@@ -386,7 +389,7 @@ class TruglassTemplate extends BaseTemplate {
 		}
 
 		// Need this nonsense to support NewsBox in MW 1.39+ using the new hooks (urgh)
-		$content = $this->getSkin()->getAfterPortlet( $bar );
+		$content = $skin->getAfterPortlet( $bar );
 		if ( $content !== '' ) {
 			echo Html::rawElement(
 				'div',
