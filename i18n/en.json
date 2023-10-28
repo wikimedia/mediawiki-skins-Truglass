@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
+	"truglass-prefs-talkpage": "[[mw:Skin talk:Truglass|{{int:talk}}]]",
 	"truglass-desc": "A sleek, stylish, simplified skin",
 	"truglass-footertext": "",
 	"truglass-links": "{{SITENAME}} Links",

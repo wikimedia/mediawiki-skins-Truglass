@@ -4,6 +4,7 @@
 			"Liuxinyu970226"
 		]
 	},
+	"truglass-prefs-talkpage": "{{optional}}\nLink to the skin's talk page on MediaWiki.org; it is shown before the preview link in skin preferences on Special:Preferences. Inspired by [https://phabricator.wikimedia.org/T307113 T307113].",
 	"truglass-desc": "{{desc|what=skin|name=Truglass|url=https://www.mediawiki.org/wiki/Skin:Truglass}}",
 	"truglass-footertext": "{{ignored}}",
 	"truglass-links": "This is shown as a section header in the sidebar.\n{{Identical|Link}}",
