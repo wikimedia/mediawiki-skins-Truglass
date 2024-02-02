@@ -44,7 +44,7 @@
 	},
 	"ResourceModules": {
 		"skins.truglass": {
-			"class": "ResourceLoaderSkinModule",
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
 				"interface": true,
 				"content-links": true,
