@@ -333,7 +333,7 @@ class TruglassTemplate extends BaseTemplate {
 	function networkNavigationBox() {
 		$sidebarLinks = $this->config->get( 'TruglassSidebarLinks' );
 
-		if ( is_array( $sidebarLinks ) && !empty( $sidebarLinks ) ) {
+		if ( is_array( $sidebarLinks ) && $sidebarLinks ) {
 ?>
 					<div class="sbmodule" id="sbm-networknav">
 						<h4 class="sbmoduletitle displayer"><?php echo $this->getSkin()->msg( 'truglass-links' )->parse() ?></h4>
