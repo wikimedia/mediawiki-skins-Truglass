@@ -82,6 +82,7 @@ class TruglassTemplate extends BaseTemplate {
 							<?php } ?>
 								<a id="top"></a>
 								<h3 id="siteSub"><?php $this->msg( 'tagline' ) ?></h3>
+								<?php echo $this->getIndicators(); ?>
 								<div id="contentSub2"><?php $this->html( 'subtitle' ) ?></div>
 								<?php if ( $this->data['undelete'] ) { ?><div id="contentSub"><?php $this->html( 'undelete' ) ?></div><?php } ?>
 								<?php if ( $this->data['newtalk'] ) { ?><div class="usermessage"><?php $this->html( 'newtalk' ) ?></div><?php } ?>
