@@ -4,7 +4,7 @@
 ** @license GPL (http://www.gnu.org/copyleft/gpl.html)
 ** @author Elliott Franklin Cable <me@ell.io>
 ** @copyright © 2006-2007 Elliott Franklin Cable <me@ell.io>
-** @copyright © 2007-2023 Jack Phoenix -- fixes, standardization
+** @copyright © 2007-2024 Jack Phoenix -- fixes, standardization
 */
 
 /*------------------*
@@ -1175,7 +1175,6 @@ div.suggestions {
 
 #contentSub, #contentSub2 {
 	font-size: 84%;
-	text-align: right;
 	line-height: 1.2em;
 	padding: 0;
 	margin: 0 1em 0 0;
