@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
+	"truglass-desc": "Een elegante, stijlvolle, vereenvoudigde vormgeving",
 	"truglass-links": "Koppelingen van {{SITENAME}}",
 	"truglass-welcome": "Welkom op {{SITENAME}}! Draag bij door op de bewerkknop hierboven te klikken!"
 }
