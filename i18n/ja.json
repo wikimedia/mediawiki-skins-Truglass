@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Otokoume",
-			"Shirayuki"
+			"Shirayuki",
+			"Yaakiyu.jp"
 		]
 	},
-	"truglass-desc": "洗練された、スタイリッシュでシンプルな外装",
+	"truglass-desc": "洗練された、スタイリッシュでシンプルなスキン",
 	"truglass-links": "{{SITENAME}} のリンク",
 	"truglass-welcome": "{{SITENAME}} へようこそ。ページ上部の編集ボタンから寄稿できます。"
 }
