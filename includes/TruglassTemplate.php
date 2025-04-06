@@ -8,7 +8,7 @@
  * @author Elliott Franklin Cable <me@ell.io>
  * @author Jack Phoenix
  * @copyright Copyright © Elliott Franklin Cable
- * @copyright Copyright © 2009-2023 Jack Phoenix
+ * @copyright Copyright © 2009-2025 Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -26,7 +26,7 @@ class TruglassTemplate extends BaseTemplate {
 	 */
 	public function execute() {
 		$skin = $this->getSkin();
-		$this->data['pageLanguage'] = $skin->getTitle()->getPageViewLanguage()->getHtmlCode();
+		$this->data['pageLanguage'] = $skin->getTitle()->getPageLanguage()->getHtmlCode();
 
 ?><div id="main">
 	<table class="fullwidth container" cellpadding="0">
