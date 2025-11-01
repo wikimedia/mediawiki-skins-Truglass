@@ -11,10 +11,10 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.40.0"
+		"MediaWiki": ">= 1.41.0"
 	},
 	"ConfigRegistry": {
-		"truglass": "GlobalVarConfig::newInstance"
+		"truglass": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
 	},
 	"ValidSkinNames": {
 		"truglass": {
